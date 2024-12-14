@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 تطبيق الرسم المطور</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 تطبيق الرسم المطور</h1>
+            <p>ارسم وأبدع باستخدام الأدوات في الأسفل!</p>
+        </header>
+
+        <section class="controls">
+            <label for="colorPicker">🎨 اللون:</label>
+            <input type="color" id="colorPicker" value="#000000">
+
+            <label for="brushSize">✏️ حجم الفرشاة:</label>
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+
+            <button id="eraserMode" class="btn">🧽 مسّاحة</button>
+            <button id="rainbowMode" class="btn">🌈 قوس قزح</button>
+            <button id="undo" class="btn">↩️ تراجع</button>
+            <button id="clearCanvas" class="btn">🗑️ مسح</button>
+            <button id="saveCanvas" class="btn">💾 حفظ</button>
+        </section>
+
+        <div class="canvas-container">
+            <canvas id="drawingCanvas"></canvas>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Hussain Ali Ibrahim</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
